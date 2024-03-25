@@ -1,11 +1,9 @@
 # warning 该代码未实现标准化,仅供参考。请不要参考变量或函数起名方式以及代码层次。这里是极其不严谨的。
 
 import json
-import time
 import httpx
 from rich.console import Console
 from rich.table import Table
-from rich.text import Text
 from rich.prompt import Prompt
 
 
