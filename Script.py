@@ -140,7 +140,7 @@ def main():
                     dladdtable.add_column("childrenAsin", justify="right", style="magenta", no_wrap=True)
                     dladdtable.add_column("sku", justify="right", style="magenta", no_wrap=True)
                     for item in DealInfo["items"]:
-                        dladdtable.add_row(item["parentAsin"], item["asin"], item["sku"])
+                        dladdtable.add_row(item["parentAsin"] if "parentAsin" in item else "", item["asin"], item["sku"])
                     console.print(dladdtable)
                     c_item = {}
                     IntelligentVarwiz = Prompt.ask(prompt="如果要智能添加变体关系,请在这里输入任意一个子体,否则留空跳过", default="")
